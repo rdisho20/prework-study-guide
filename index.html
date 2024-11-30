@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prework Study Guide</title>
+    <link rel="stylesheet" href="./assets/style.css"/>
   </head>
   <body>
     <header id="top">
@@ -24,8 +25,36 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>The `*` selector applies styles globally (e.g., `margin: 0; padding: 0;`).</li>
+          <li>Multiple selectors can share styles using commas (e.g., `header, footer`).</li>
+          <li>DRY (Do Not Repeat Yourself) encourages reusing code for efficiency.</li>
+          <li>Text can be centered with `text-align: center` for `h1` and `h2`.</li>
+          <li>Images can use `display: block` and `margin: auto` for centering.</li>
+          <li>`ul` lists can have custom padding (`padding-left: 40px`) and font sizes.</li>
+          <li>Paragraphs (`p`) can be centered with a font size of `30px`.</li>
         </ul>
+        <h3>"The" Box Model</h3>
+          <strong>CSS Box Model:</strong> Defines how elements render, encompassing content, padding, border, and margin. 
+          <h4>Key Concepts:</h4>
+          <ol>
+            <li>Box Types:</li>
+            <ul>
+              <li>Block: Starts on new line, respects dimensions, affects spacing w/ padding, borders, and margins.</li>
+              <li>Inline: Flows in-line, ignores height/width, affects horizontal spacing.</li>
+            </ul>
+            <li>Box Layers:</li>
+            <ul>
+              <li>Content Box: For content (`width`, `height`).</li>
+              <li>Padding Box: Space around content (`padding`).</li>
+              <li>Border Box: Around padding (`border`).</li>
+              <li>Margin Box: Space between elements (`margin`).</li>
+            </ul>
+            <li>Box Models:</li>
+            <ul>
+              <li>Standard: Width/height = content only; padding/borders add → total size.</li>
+              <li>Alternate: Width/height = content + padding + borders (`box-sizing: border-box`).</li>
+            </ul>
+          </ol>
       </section>
 
       <section class="card" id="git-section">
