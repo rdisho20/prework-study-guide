@@ -18,9 +18,45 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li>HTML Basics</li>
+          <ul>
+            <li>Structure: &lt;html&gt;, &lt;head&gt;, &lt;body&gt;</li>
+            <li>Elements: Tags like &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, etc.</li>
+            <li>Attributes: Example: &lt;a href="url"&gt;</li>
+          </ul>
+          
+          <li>Text Elements</li>
+          <ul>
+            <li>&lt;h1&gt;, &lt;h2&gt;, ... for headings.</li>
+            <li>&lt;p&gt; for paragraphs.</li>
+            <li>&lt;strong&gt;, &lt;em&gt; for bold and italic text.</li>
+          </ul>
+        
+          <li>Links and Media</li>
+          <ul>
+            <li>&lt;a href="url"&gt; for links.</li>
+            <li>&lt;img src="src" alt="description"&gt; for images.</li>
+          </ul>
+        
+          <li>Lists</li>
+          <ul>
+            <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; for unordered/ordered lists.</li>
+          </ul>
+        
+          <li>Semantic HTML</li>
+          <ul>
+            <li>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt; for document sections.</li>
+          </ul>
+        
+          <li>Meta Information</li>
+          <ul>
+            <li>&lt;meta charset="UTF-8"&gt; for character encoding.</li>
+            <li>&lt;title&gt; for page title.</li>
+            <li>&lt;meta name="description" content="..."&gt; for page description.</li>
+          </ul>
         </ul>
+        
+        
       </section>
 
       <section class="card" id="css-section">
@@ -29,15 +65,14 @@
           <li>The `*` selector applies styles globally (e.g., `margin: 0; padding: 0;`).</li>
           <li>Multiple selectors can share styles using commas (e.g., `header, footer`).</li>
           <li>DRY (Do Not Repeat Yourself) encourages reusing code for efficiency.</li>
-          <li>Text can be centered with `text-align: center` for `h1` and `h2`.</li>
+          <li>Text can be centered with `text-align: center`.</li>
           <li>Images can use `display: block` and `margin: auto` for centering.</li>
           <li>`ul` lists can have custom padding (`padding-left: 40px`) and font sizes.</li>
-          <li>Paragraphs (`p`) can be centered with a font size of `30px`.</li>
         </ul>
         <h3>"The" Box Model</h3>
-          <strong>CSS Box Model:</strong> Defines how elements render, encompassing content, padding, border, and margin. 
+          <h4><strong>CSS Box Model:</strong> Defines how elements render, encompassing content, padding, border, and margin.</p></h4>
           <h4>Key Concepts:</h4>
-          <ol>
+          <ul>
             <li>Box Types:</li>
             <ul>
               <li>Block: Starts on new line, respects dimensions, affects spacing w/ padding, borders, and margins.</li>
@@ -55,22 +90,90 @@
               <li>Standard: Width/height = content only; padding/borders add → total size.</li>
               <li>Alternate: Width/height = content + padding + borders (`box-sizing: border-box`).</li>
             </ul>
-          </ol>
+          </ul>
       </section>
 
       <section class="card" id="git-section">
         <h2>Git</h2>
-        <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-        </ul>
+          <ul>
+            <li>Git Workflow</li>
+            <ul>
+              <li>Branching: Create feature branches for isolated work.</li>
+              <li>Commit: Regular, descriptive commits on local branches.</li>
+              <li>Push: Push changes to remote after local commits.</li>
+              <li>Pull: `git pull origin main` to sync with remote.</li>
+              <li>Merge: Merge feature branches via PR.</li>
+            </ul>
+            
+            <li>Common Commands</li>
+            <ul>
+              <li>`git clone <repo>`: Clone remote repository.</li>
+              <li>`git add .`: Stage changes.</li>
+              <li>`git commit -m "message"`: Commit staged changes.</li>
+              <li>`git push origin branch`: Push local branch to remote.</li>
+              <li>`git pull origin main`: Sync local with remote after PR merge.</li>
+              <li>`git status`: Check repository status.</li>
+            </ul>
+
+            <li>Why Pull After Merging PR</li>
+            <ul>
+              <li>Remote merge doesn’t auto-sync local branch.</li>
+              <li>`git pull` updates local to reflect remote changes.</li>
+              <li>Avoids conflicts in future work.</li>
+            </ul>
+            
+            <li>Syncing Local with Remote</li>
+            <ul>
+              <li>Use `git pull origin main` to sync local after PR merge.</li>
+              <li>Alternative: `git fetch origin && git reset --hard origin/main` to avoid merge.</li>
+            </ul>
+          </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>Basics</li>
+          <ul>
+            <li>Variables: let, const, var</li>
+            <li>Data Types: String, Number, Boolean, Object, Array</li>
+            <li>Operators: +, -, *, /, %, ==, ===</li>
+          </ul>
+          
+          <li>Functions</li>
+          <ul>
+            <li>Declaration: function name() {}</li>
+          </ul>
+          
+          <li>Loops</li>
+          <ul>
+            <li>For: for (let i = 0; i < n; i++) {}</li>
+          </ul>
+          
+          <li>Conditionals</li>
+          <ul>
+            <li>If: if (condition) {}</li>
+            <li>If-Else: if (condition) {} else {}</li>
+          </ul>
+        
+          <li>Objects & Arrays</li>
+          <ul>
+            <li>Arrays: const arr = [1, 2, 3];</li>
+            <li>Access: arr[0]</li>
+          </ul>
+        
+          <li>Events</li>
+          <ul>
+            <li>Event Listeners: element.addEventListener('event', callback);</li>
+            <li>Common events: click, submit, change</li>
+          </ul>
+        
+          <li>Miscellaneous</li>
+          <ul>
+            <li>Console: console.log(), console.error()</li>
+          </ul>
         </ul>
+        
       </section>
     </main>
 
